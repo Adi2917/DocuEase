@@ -1,0 +1,86 @@
+/* 🔹 Card Container */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%; /* ✅ Take full grid cell width */
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* 🔹 Card Image */
+.service-image {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+/* 🔹 Service Title */
+.service-card h3 {
+  font-size: 1.1rem;
+  color: #1f2937;
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+
+/* 🔹 Service Fees */
+.service-fees {
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* 🔹 WhatsApp Button */
+.service-btn {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #1ebd5b;
+}
+
+/* 🔹 Responsive Grid Behavior (Parent .card class ke liye recommend) */
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 1em;
+  padding: 0 2em;
+}
+
+/* ✅ Responsive Tweaks */
+@media (max-width: 768px) {
+  .service-image {
+    height: 120px;
+  }
+  .service-card h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+    padding: 15px;
+  }
+  .service-image {
+    height: 100px;
+  }
+}

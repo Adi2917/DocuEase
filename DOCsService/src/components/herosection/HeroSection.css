@@ -1,0 +1,25 @@
+.getstart{
+    padding: 7px;
+    background-color: rgb(227, 166, 60);
+    margin-left: 10em;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.hese-img{
+    height: 25em;
+    margin-top: 2em;
+    margin-left: 4em;
+}
+
+@media (max-width: 768px){
+    .hese{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hese-img{
+        height: 15em;
+    }
+}
