@@ -6,6 +6,17 @@ import ServiceCard from "../components/service/ServiceCard";
 import './Service.css'
 import srvintro from '../../src/assets/srv-intro.webp'
 
+import caste from '../../src/assets/caste.jpg'
+import income from '../../src/assets/income.jpg'
+import residence from '../../src/assets/residence.jpg'
+import ncl from '../../src/assets/NCL.jpg'
+import pan from '../../src/assets/pan.png'
+import pdf from '../../src/assets/pdf.jpg'
+import train from '../../src/assets/train.png'
+import scholarship from '../../src/assets/scholarship.png'
+import resume from '../../src/assets/resume.jpg'
+
+
 
 const Services = () => {
   return (
@@ -28,17 +39,17 @@ const Services = () => {
 
       <div className="cardsec">
           <ServiceCard
-            image='src\assets\caste.jpg'
+            image={caste}
             name='cate Certificate'
             fees="₹50 Only"
           />
           <ServiceCard 
-            image='src\assets\income.jpg'      
+            image={income}      
             name='Income Certificate'
             fees="₹50 Only"
           />
           <ServiceCard
-            image='src\assets\residence.jpg'
+            image={residence}
             name='Residence Certificate'
             fees='₹50 Only'
           />
@@ -46,17 +57,17 @@ const Services = () => {
 
       <div className="cardsec">
           <ServiceCard
-            image='src\assets\NCL.jpg'
+            image={ncl}
             name='NCL Application'
             fees="₹100 Only"
           />
           <ServiceCard 
-            image='src\assets\pan.png'      
+            image={pan}      
             name='Pan-Card Application'
             fees="₹250 Only"
           />
           <ServiceCard
-            image='src\assets\pdf.jpg'
+            image={pdf}
             name='Pdf Editor'
             fees='₹30 Only (Per Page)'
           />
@@ -64,17 +75,17 @@ const Services = () => {
 
        <div className="cardsec">
           <ServiceCard 
-            image='src\assets\train.png'      
+            image={train}      
             name='Train Ticket Booking'
             fees="₹100 Only (Application Fees)"
           />
           <ServiceCard
-            image='src\assets\scholarship.png'
+            image={scholarship}
             name='Scholarship Application'
             fees='₹100 Only'
           />
           <ServiceCard
-            image='src\assets\resume.jpg'
+            image={resume}
             name='Create Resume'
             fees='₹100 Only'
           />

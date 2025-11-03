@@ -4,6 +4,10 @@ import srvimg from '../../../src/assets/srv-intro.webp'
 import './ServiceIntro.css'
 import { Link } from "react-router-dom";
 
+import ncl from '../../src/assets/NCL.jpg'
+import pan from '../../src/assets/pan.png'
+import pdf from '../../src/assets/pdf.jpg'
+
 
 const ServiceIntro = () => {
   return (
@@ -32,7 +36,7 @@ const ServiceIntro = () => {
             
             <div >
                 <ServiceCard
-                    image="src\assets\pan.png"
+                    image={pan}
                     name="PAN Card Application"
                     fees="₹200 Only"
                 />
@@ -40,7 +44,7 @@ const ServiceIntro = () => {
 
             <div>
                 <ServiceCard 
-                    image="src\assets\NCL.jpg"
+                    image={ncl}
                     name="NCL Application"
                     fees="₹100 Only"
                 />
@@ -48,7 +52,7 @@ const ServiceIntro = () => {
  
             <div>
                 <ServiceCard
-                    image="src\assets\pdf.jpg"
+                    image={pdf}
                     name="PDF Editing"
                     fees="₹50 Only"
                 />
