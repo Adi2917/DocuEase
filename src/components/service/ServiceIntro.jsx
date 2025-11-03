@@ -38,7 +38,7 @@ const ServiceIntro = () => {
                 <ServiceCard
                     image={pan}
                     name="PAN Card Application"
-                    fees="₹200 Only"
+                    fees="₹250 Only"
                 />
             </div>
 
@@ -54,7 +54,7 @@ const ServiceIntro = () => {
                 <ServiceCard
                     image={pdf}
                     name="PDF Editing"
-                    fees="₹50 Only"
+                    fees="₹30 Only (Per Page)"
                 />
             </div>
         </div>

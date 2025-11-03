@@ -10,16 +10,10 @@ const ContactIntro = () => {
     comment: "",
   });
 
-  // Input handle karne ke liye
   const handleChange = (e) => {
     const { name, value } = e.target;
-
-    // Agar number input hai to sirf digits aur max 10 allowed
     if (name === "number") {
-      // Only digits allowed
       const onlyDigits = value.replace(/\D/g, "");
-
-      // Max length 10
       if (onlyDigits.length <= 10) {
         setFormData({ ...formData, [name]: onlyDigits });
       }
@@ -28,21 +22,35 @@ const ContactIntro = () => {
     }
   };
 
-  // Form submit hone ke baad
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // 10 digit validation check
     if (formData.number.length !== 10) {
       alert("Please enter a valid 10-digit mobile number.");
       return;
     }
 
-    // Alert show kare
-    alert("Submitted successfully!");
+    try {
+      // Formspree URL yahan daal
+      const response = await fetch("https://formspree.io/f/xzzkwlkw", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    // Form clear
-    setFormData({ name: "", number: "", email: "", service: "", comment: "" });
+      if (response.ok) {
+        alert("Form submitted successfully! ✅");
+        setFormData({ name: "", number: "", email: "", service: "", comment: "" });
+      } else {
+        alert("Oops! Something went wrong.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error submitting the form. Try again later.");
+    }
   };
 
   return (

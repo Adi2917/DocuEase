@@ -42,5 +42,9 @@
         align-items: center;
     }
 
+    .card{
+        margin-top: 2em;
+    }
+
 
 }
