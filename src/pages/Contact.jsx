@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import ContactIntro from "../components/Contact/ContactIntro";
+import ContactForm from "../components/Contact/ContactForm";
+
 
 const Contact = () => {
   return (
@@ -45,6 +48,9 @@ const Contact = () => {
             Chat on WhatsApp
           </a>
         </div>
+
+        <ContactIntro />
+        <ContactForm />
       </section>
       <Footer />
     </div>

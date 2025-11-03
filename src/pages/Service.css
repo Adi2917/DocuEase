@@ -20,7 +20,7 @@
     margin-top: 2em;
 }
 
-@media (max-width : 768px){
+@media (max-width : 800px){
     .cardsec{
         display: flex;
         flex-direction: column;
@@ -29,6 +29,11 @@
         width: 20em;
         margin-left: 2em;
     }
+
+    .srvimg{
+    width: 20em;
+    margin-top: 2em;
+}
 
     .imgpara{
         display: flex;

@@ -7,7 +7,7 @@
 .servintro{
     font-size: 20px;
     margin-top: 4em;
-    margin-left: 3em;
+    margin-left: 1em;
     text-align: center;
     line-height: 30px;
 }
@@ -42,7 +42,6 @@
     .servimg{
         height: 15em;
     }
-
     .card{
         display: flex;
         flex-direction: column;

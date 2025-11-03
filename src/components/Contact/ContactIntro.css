@@ -1,0 +1,90 @@
+.contact-intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background: linear-gradient(180deg, #f8fafc 0%, #e0f2fe 100%);
+  font-family: "Poppins", sans-serif;
+  gap: 40px;
+}
+
+/* --- Left Text Section --- */
+.contact-intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+.contact-intro-text h2 {
+  color: #0284c7;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.contact-intro-text p {
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 500px;
+}
+
+/* --- Cards Section --- */
+.contact-intro-cards {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  width: 260px;
+  transition: all 0.3s ease;
+  border-top: 4px solid #38bdf8;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.25);
+}
+
+.contact-icon {
+  color: #0284c7;
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+.contact-card h3 {
+  font-size: 1.2rem;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.contact-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.contact-link {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.contact-link:hover {
+  color: #0369a1;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .contact-intro-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .contact-intro-text p {
+    margin: 0 auto;
+  }
+}

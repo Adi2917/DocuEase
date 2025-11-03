@@ -4,9 +4,9 @@ import srvimg from '../../../src/assets/srv-intro.webp'
 import './ServiceIntro.css'
 import { Link } from "react-router-dom";
 
-import ncl from '../../src/assets/NCL.jpg'
-import pan from '../../src/assets/pan.png'
-import pdf from '../../src/assets/pdf.jpg'
+import ncl from '../../assets/NCL.jpg'
+import pan from '../../assets/pan.png'
+import pdf from '../../assets/pdf.jpg'
 
 
 const ServiceIntro = () => {
