@@ -1,0 +1,56 @@
+.servsection{
+    display: flex;
+}
+.servimg{
+    height: 20em;
+}
+.servintro{
+    font-size: 20px;
+    margin-top: 4em;
+    margin-left: 3em;
+    text-align: center;
+    line-height: 30px;
+}
+.parabtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.morebtn{
+    width: 10em;
+    text-decoration: none;
+    background-color: rgb(243, 179, 95);
+    border-radius: 15px;
+}
+
+.card{
+    display: flex;
+    margin-top: 3em;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px){
+    .servsection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servimg{
+        height: 15em;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cardopt{
+        margin-top: 2em;
+    }
+}
