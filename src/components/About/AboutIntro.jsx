@@ -1,25 +1,23 @@
-import React from 'react'
+import React from 'react';
 import { Link } from "react-router-dom";
-
+import './AboutIntro.css';
 
 const AboutIntro = () => {
   return (
-    <div>
-        <div style={{textAlign:'center', fontSize:'20px', padding:'2em'}}>
-            <h3>ABOUT <u>Us</u></h3>
-            <p style={{fontFamily:"serif"}}>
-                At Docu Ease, we simplify the process of obtaining essential documents like residence, income, and caste certificates.
-                Our goal is to make government and personal documentation fast, transparent, and stress-free for everyone — anytime, anywhere.
-            </p>
-            <p style={{fontFamily:"serif"}}>
-                DOCs Service was founded with a mission to bridge the gap between citizens and essential government services.
-            </p>
-            <button style={{padding:'5px', borderRadius:'10px'}}>
-              <Link to="./About" style={{textDecoration:'none'}}>Know More</Link>
-            </button>
-        </div>
+    <div className="about-intro">
+      <h3>ABOUT <span className="underline">Us</span></h3>
+      <p className="about-text">
+        At Docu Ease, we simplify the process of obtaining essential documents like residence, income, and caste certificates.
+        Our goal is to make government and personal documentation fast, transparent, and stress-free for everyone — anytime, anywhere.
+      </p>
+      <p className="about-text">
+        DOCs Service was founded with a mission to bridge the gap between citizens and essential government services.
+      </p>
+      <button className="about-btn">
+        <Link to="./About">Know More</Link>
+      </button>
     </div>
   )
 }
 
-export default AboutIntro
+export default AboutIntro;

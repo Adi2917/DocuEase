@@ -1,10 +1,9 @@
 import React from "react";
-import "./ServiceCard.css"; // ✅ CSS import
+import "./ServiceCard.css";
 
 const ServiceCard = ({ image, name, fees }) => {
-  // WhatsApp link + dynamic message
-  const whatsappNumber = "9570197579"; // 👈 तुम्‍हारा नंबर
-  const message = `I want service of ${name}`;
+  const whatsappNumber = "9570197579"; // ✅ Your WhatsApp number
+  const message = `Hi, I am interested in the ${name} service. Could you please provide more details?`;
   const encodedMessage = encodeURIComponent(message);
   const finalLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
@@ -26,19 +25,3 @@ const ServiceCard = ({ image, name, fees }) => {
 };
 
 export default ServiceCard;
-
-
-// import React from "react";
-// import "./ServiceCard.css"; // ✅ CSS import kiya gaya hai
-
-// const ServiceCard = ({ image, name, fees }) => {
-//   return (
-//     <div className="service-card">
-//       <img src={image} alt={name} className="service-image" />
-//       <h3>{name}</h3>
-//       <p className="service-fees">{fees}</p>
-//     </div>
-//   );
-// };
-
-// export default ServiceCard;
