@@ -9,11 +9,10 @@ const Footer = () => {
       <div className="footer-container">
         {/* --- Left Section --- */}
         <div className="footer-left">
-          <h2 className="footer-logo">DocuEase</h2>
+          <h2 className="footer-logo">Creators</h2>
           <p className="footer-about">
-            Making documentation simple, secure, and quick.  
-            From certificates to official registrations — we help you every step of the way.  
-            At DocuEase, transparency, trust, and timely service are our top priorities.
+            At <strong>Creators</strong>, we bring together innovation, creativity, and smart solutions across six core sectors — Ads Creation, Graphics Designing, Software Development, Consultancy, DocuEase Services, and Loan Assistance.  
+            Our mission is to help individuals and businesses grow efficiently and confidently, providing expert guidance, reliable support, and seamless service at every step.
           </p>
         </div>
 
@@ -31,7 +30,7 @@ const Footer = () => {
         {/* --- Right Section --- */}
         <div className="footer-contact">
           <h3>Get in Touch</h3>
-          <p><FaEnvelope /> <a href="mailto:support@docuease.in">support@docuease.in</a></p>
+          <p><FaEnvelope /> <a href="mailto:support@creators.com">support@creators.com</a></p>
           <p><FaPhoneAlt /> <a href="tel:+919570197579">+91 9570197579</a></p>
 
           <a
@@ -49,7 +48,7 @@ const Footer = () => {
       {/* --- Bottom Section --- */}
       <div className="footer-bottom">
         <p>
-          © {new Date().getFullYear()} <strong>DocuEase</strong> — All Rights Reserved.
+          © {new Date().getFullYear()} <strong>Creators</strong> — All Rights Reserved.
         </p>
       </div>
     </footer>

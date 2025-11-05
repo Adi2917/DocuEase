@@ -1,65 +1,50 @@
-import React from 'react'
+import React from "react";
 import ServiceCard from "./ServiceCard";
-import srvimg from '../../../src/assets/srv-intro.webp'
-import './ServiceIntro.css'
+import srvimg from '../../../src/assets/srv-intro.webp';
+import './ServiceIntro.css';
 import { Link } from "react-router-dom";
 
-import ncl from '../../assets/NCL.jpg'
-import pan from '../../assets/pan.png'
-import pdf from '../../assets/pdf.jpg'
-
+// Service images
+import adds from '../../assets/add-logo.jpg';
+import graphics from '../../assets/graphics-logo.jpg';
+import software from '../../assets/software-logo.png';
+import consultancy from '../../assets/consultancy-logo.png';
+import docuease from '../../assets/document-logo.jpg';
+import loan from '../../assets/loan-logo.jpg';
 
 const ServiceIntro = () => {
   return (
-    <div >
-        <div style={{textAlign:'center', fontSize:'20px'}}>
-            <h3>SERV<u>ice</u></h3>
-        </div>
-        <div className='servsection'>
-            <img src={srvimg} className='servimg'/>
-            <div className='parabtn'>
-                <p className='servintro'>
-                    We make every document process simple, fast, and stress-free.From government certificates to digital forms — everything in one place.
-                    No long queues, no paperwork hassle, and no confusion.Just clear guidance, trusted support, and quick results — every time.
-                    Because getting your documents done should be easy and comfortable for everyone.
-                </p>
-                <button className='morebtn'>
-                    <Link to="/Services" style={{ textDecoration: 'none', color: 'inherit' }}>
-                        Go for more <br />Service
-                    </Link>
-                </button>
-            </div>
-            
-        </div>
+    <div className="service-intro-container">
+      
+      {/* ===== Section Heading ===== */}
+      <h2 className="service-heading">Service at <span className="highlight">Creators</span></h2>
 
-        <div className='card'>
-            
-            <div >
-                <ServiceCard
-                    image={pan}
-                    name="PAN Card Application"
-                    fees="₹250 Only"
-                />
-            </div>
-
-            <div>
-                <ServiceCard 
-                    image={ncl}
-                    name="NCL Application"
-                    fees="₹100 Only"
-                />
-            </div>
- 
-            <div>
-                <ServiceCard
-                    image={pdf}
-                    name="PDF Editing"
-                    fees="₹30 Only (Per Page)"
-                />
-            </div>
+      {/* ===== Intro Section ===== */}
+      <div className='intro-flex'>
+        <img src={srvimg} className='servimg' alt="Services" />
+        <div className='parabtn'>
+          <p className='servintro'>
+            At <strong>Creators</strong>, we offer six core services — Ads Creation, Graphics Designing, Software Development, Consultancy, DocuEase Services, and Loan Assistance. Each service is designed to help individuals and businesses efficiently achieve their goals.
+          </p>
+          <button className='morebtn'>
+            <Link to="/Services" style={{ textDecoration: 'none', color: 'inherit' }}>
+              Explore All Services
+            </Link>
+          </button>
         </div>
+      </div>
+
+      {/* ===== Services Cards ===== */}
+      <div className='card-container'>
+        <ServiceCard image={adds} name="Ads Creation" link="/add" />
+        <ServiceCard image={graphics} name="Graphics Designing" link="/graphics" />
+        <ServiceCard image={software} name="Software Development" link="/software" />
+        <ServiceCard image={consultancy} name="Consultancy" link="/consultancy" />
+        <ServiceCard image={docuease} name="DocuEase Services" link="/docuease" />
+        <ServiceCard image={loan} name="Loan Assistance" link="/loan" />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ServiceIntro
+export default ServiceIntro;

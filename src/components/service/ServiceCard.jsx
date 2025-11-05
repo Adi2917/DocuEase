@@ -1,25 +1,18 @@
 import React from "react";
-import "./ServiceCard.css";
+import { Link } from "react-router-dom";
+import './ServiceCard.css';
 
-const ServiceCard = ({ image, name, fees }) => {
-  const whatsappNumber = "9570197579"; // ✅ Your WhatsApp number
-  const message = `Hi, I am interested in the ${name} service. Could you please provide more details?`;
-  const encodedMessage = encodeURIComponent(message);
-  const finalLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-
+const ServiceCard = ({ image, name, fees, link }) => {
   return (
     <div className="service-card">
       <img src={image} alt={name} className="service-image" />
-      <h3>{name}</h3>
-      <p className="service-fees">{fees}</p>
-      <a
-        href={finalLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="service-btn"
-      >
-        Get Service
-      </a>
+      <h4>{name}</h4>
+      <p>{fees}</p>
+      <button className="card-btn">
+        <Link to={link} style={{ textDecoration: 'none', color: 'inherit' }}>
+          Know More
+        </Link>
+      </button>
     </div>
   );
 };

@@ -31,7 +31,6 @@ const ContactIntro = () => {
     }
 
     try {
-      // Formspree URL yahan daal
       const response = await fetch("https://formspree.io/f/xzzkwlkw", {
         method: "POST",
         headers: {
@@ -107,11 +106,10 @@ const ContactIntro = () => {
       <div className="contact-info">
         <h2>We are here to help you</h2>
         <p>
-          We understand that dealing with documentation and government processes can feel complicated —
-          but that’s where we come in. <strong>DocuEase</strong> is here to make things simple, clear, and
-          stress-free. Our mission is to empower you by taking care of every detail with honesty and
-          precision. You can count on us to be responsive, supportive, and always just a message away
-          when you need help.
+          At <strong>Creators</strong>, we simplify all your document-related and business service needs.
+          From Ads Creation to Loan Assistance, our goal is to make every process fast, clear, and stress-free. 
+          Our team ensures professional guidance, trusted support, and timely solutions so you can focus on your goals.
+          Reach out to us anytime — we are just a message away to assist you efficiently and reliably.
         </p>
       </div>
     </div>
