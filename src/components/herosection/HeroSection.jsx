@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 
 // --- 6 Section Data ---
-import addsImg from "../../../src/assets/adds.jpg";
-import graphicsImg from "../../../src/assets/graphics.jpg";
-import softwareImg from "../../../src/assets/software.jpg";
-import consultancyImg from "../../../src/assets/consultancy.jpg";
-import documentationImg from "../../../src/assets/documentation.jpg";
-import loanImg from "../../../src/assets/loan.jpg";
+import addsImg from "../../assets/adds.jpg";
+
+import graphicsImg from "../../assets/graphics.jpg";
+import softwareImg from "../../assets/software.jpg";
+import consultancyImg from "../../assets/consultancy.jpg";
+import documentationImg from "../../assets/documentation.jpg";
+import loanImg from "../../assets/loan.jpg";
 
 const sections = [
   {
