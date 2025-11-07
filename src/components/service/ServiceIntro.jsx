@@ -1,25 +1,27 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
-import srvimg from '../../../src/assets/srv-intro.webp';
 import './ServiceIntro.css';
 import { Link } from "react-router-dom";
 
-// Service images
-import adds from '../../assets/add-logo.jpg';
-import graphics from '../../assets/graphics-logo.jpg';
-import software from '../../assets/software-logo.png';
-import consultancy from '../../assets/consultancy-logo.png';
-import docuease from '../../assets/document-logo.jpg';
-import loan from '../../assets/loan-logo.jpg';
+// Import srv-intro from src/assets
+import srvimg from "../../assets/srv-intro.webp";
+
+// Service images using public folder
+const adds = "/images/Add-logo.jpg";
+const graphics = "/images/graphics-logo.jpg";
+const software = "/images/software-logo.png";
+const consultancy = "/images/consultancy-logo.png";
+const docuease = "/images/document-logo.jpg";
+const loan = "/images/loan-logo.jpg";
 
 const ServiceIntro = () => {
   return (
     <div className="service-intro-container">
       
-      {/* ===== Section Heading ===== */}
-      <h2 className="service-heading">Service at <span className="highlight">Creators</span></h2>
+      <h2 className="service-heading">
+        Service at <span className="highlight">Creators</span>
+      </h2>
 
-      {/* ===== Intro Section ===== */}
       <div className='intro-flex'>
         <img src={srvimg} className='servimg' alt="Services" />
         <div className='parabtn'>
@@ -29,7 +31,6 @@ const ServiceIntro = () => {
         </div>
       </div>
 
-      {/* ===== Services Cards ===== */}
       <div className='card-container'>
         <ServiceCard image={adds} name="Ads Creation" link="/advertising" />
         <ServiceCard image={graphics} name="Graphics Designing" link="/graphics" />
