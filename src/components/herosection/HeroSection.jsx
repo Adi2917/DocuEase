@@ -1,45 +1,38 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 
-// --- 6 Section Data ---
-import addsImg from "../../assets/adds.jpg";
-
-import graphicsImg from "../../assets/graphics.jpg";
-import softwareImg from "../../assets/software.jpg";
-import consultancyImg from "../../assets/consultancy.jpg";
-import documentationImg from "../../assets/documentation.jpg";
-import loanImg from "../../assets/loan.jpg";
-
+// --- 6 Section Data using public folder ---
+// Instead of import, just use relative paths from public folder
 const sections = [
   {
     title: "Creative Ads That Drive Results",
     desc: "From social media to print, we design eye-catching ads that grab attention and convert your audience into customers.",
-    img: addsImg,
+    img: "/images/Adds.jpg", // public folder path
   },
   {
     title: "Professional Graphics Design",
     desc: "Our design team brings your ideas to life with stunning visuals — logos, posters, and branding materials that make an impact.",
-    img: graphicsImg,
+    img: "/images/graphics.jpg",
   },
   {
     title: "Custom Software Development",
     desc: "We build powerful and user-friendly software solutions that help your business run smarter, faster, and better.",
-    img: softwareImg,
+    img: "/images/software.jpg",
   },
   {
     title: "Free Consultancy for Your Growth",
     desc: "Get expert advice for business, branding, and digital presence — absolutely free, to help you make better decisions.",
-    img: consultancyImg,
+    img: "/images/consultancy.jpg",
   },
   {
     title: "Docuease – Simplifying Documentation",
     desc: "We provide quick, reliable, and stress-free assistance for every document you need — anytime, anywhere.",
-    img: documentationImg,
+    img: "/images/documentation.jpg",
   },
   {
     title: "Easy Loan Assistance",
     desc: "We connect you with trusted loan providers and handle the initial paperwork so you can focus on what matters most.",
-    img: loanImg,
+    img: "/images/loan.jpg",
   },
 ];
 
