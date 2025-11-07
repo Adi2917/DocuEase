@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 
 // --- 6 Section Data ---
-import addsImg from "../../../src/assets/adds.webp";
+import addsImg from "../../../src/assets/adds.jpg";
 import graphicsImg from "../../../src/assets/graphics.jpg";
 import softwareImg from "../../../src/assets/software.jpg";
 import consultancyImg from "../../../src/assets/consultancy.jpg";

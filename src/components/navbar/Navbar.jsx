@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import logo from "../../../src/assets/logo.png";
 import wplogo from "../../../src/assets/wp-logo.webp";
+import Advertising from "../../pages/Advertising";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -46,12 +47,12 @@ const Navbar = () => {
           <span className="dropdown-title">Services ▾</span>
           {servicesOpen && (
             <div className="dropdown-menu">
-              <Link to="/services/adds" onClick={() => setMenuOpen(false)}>Adds</Link>
-              <Link to="/services/graphics" onClick={() => setMenuOpen(false)}>Graphics Designing</Link>
-              <Link to="/services/software" onClick={() => setMenuOpen(false)}>Software Development</Link>
-              <Link to="/services/consultancy" onClick={() => setMenuOpen(false)}>Consultancy</Link>
-              <Link to="/services/docuease" onClick={() => setMenuOpen(false)}>DocuEase</Link>
-              <Link to="/services/loan" onClick={() => setMenuOpen(false)}>Loan</Link>
+              <Link to="/advertising" onClick={() => setMenuOpen(false)}>Advertising</Link>
+              <Link to="/graphics" onClick={() => setMenuOpen(false)}>Graphics Designing</Link>
+              <Link to="/software" onClick={() => setMenuOpen(false)}>Software Development</Link>
+              <Link to="/consultancy" onClick={() => setMenuOpen(false)}>Consultancy</Link>
+              <Link to="/docuease" onClick={() => setMenuOpen(false)}>DocuEase</Link>
+              <Link to="/loan" onClick={() => setMenuOpen(false)}>Loan</Link>
             </div>
           )}
         </div>

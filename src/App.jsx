@@ -1,24 +1,47 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop"; // ✅ new line
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Contact from "./pages/Contact";
+// Pages
+import Home from './pages/Home';
+import About from './pages/About';
+import Advertising from './pages/Advertising';
+import Contact from './pages/Contact';
 
-const App = () => {
+// Optional: Service pages
+import Graphics from './pages/Graphics';
+import Software from './pages/Software';
+import Consultancy from './pages/Consultancy';
+import Docuease from './pages/Docuease';
+import Loan from './pages/Loan';
+
+function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* ✅ ensures every route starts from top */}
       <Routes>
+        {/* Main Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
+        <Route path="/advertising" element={<Advertising />} />
         <Route path="/contact" element={<Contact />} />
+
+        {/* Service Pages */}
+        <Route path="/graphics" element={<Graphics />} />
+        <Route path="/software" element={<Software />} />
+        <Route path="/consultancy" element={<Consultancy />} />
+        <Route path="/docuease" element={<Docuease />} />
+        <Route path="/loan" element={<Loan />} />
+
+        {/* Optional: catch-all route for 404 */}
+        <Route
+          path="*"
+          element={
+            <div style={{ padding: '2rem', textAlign: 'center' }}>
+              <h1>404 - Page Not Found</h1>
+            </div>
+          }
+        />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;

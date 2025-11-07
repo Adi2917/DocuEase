@@ -26,17 +26,12 @@ const ServiceIntro = () => {
           <p className='servintro'>
             At <strong>Creators</strong>, we offer six core services — Ads Creation, Graphics Designing, Software Development, Consultancy, DocuEase Services, and Loan Assistance. Each service is designed to help individuals and businesses efficiently achieve their goals.
           </p>
-          <button className='morebtn'>
-            <Link to="/Services" style={{ textDecoration: 'none', color: 'inherit' }}>
-              Explore All Services
-            </Link>
-          </button>
         </div>
       </div>
 
       {/* ===== Services Cards ===== */}
       <div className='card-container'>
-        <ServiceCard image={adds} name="Ads Creation" link="/add" />
+        <ServiceCard image={adds} name="Ads Creation" link="/advertising" />
         <ServiceCard image={graphics} name="Graphics Designing" link="/graphics" />
         <ServiceCard image={software} name="Software Development" link="/software" />
         <ServiceCard image={consultancy} name="Consultancy" link="/consultancy" />

@@ -1,27 +1,41 @@
-.abouthero {
-  padding: 70px 10%;
-  background: #f8fafc;
+/* ================= Section Wrapper ================= */
+.creator-hero {
+  padding: 80px 10%;
+  background: #f5f7fa;
   text-align: center;
 }
 
-.abouthero-heading {
-  font-size: 2.2rem;
+/* ================= Heading ================= */
+.creator-heading {
+  font-size: 2.6rem;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
-.abouthero-heading span {
-  color: #0077ff;
+.creator-heading span {
+  color: #0066ff;
 }
 
-.abouthero-grid {
+/* ================= Sub Text ================= */
+.creator-subtext {
+  max-width: 850px;
+  margin: 0 auto 60px auto;
+  font-size: 1.18rem;
+  color: #444;
+  line-height: 1.75;
+}
+
+/* ================= Grid Layout ================= */
+/* Desktop – 3 cards per row */
+.creator-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
-.abouthero-card {
+/* ================= Cards ================= */
+.creator-card {
   background: #ffffff;
   padding: 35px;
   border-radius: 18px;
@@ -30,44 +44,60 @@
   text-align: left;
 }
 
-.abouthero-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+.creator-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.12);
 }
 
-.abouthero-card h3 {
+.creator-card h3 {
   font-size: 1.4rem;
-  color: #0077ff;
+  color: #0066ff;
   margin-bottom: 12px;
 }
 
-.abouthero-card p {
+.creator-card p {
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
 }
 
-/* ===== Mobile ===== */
-@media (max-width: 768px){
-  .abouthero-grid {
+/* ================= Tablet – 2 cards per row ================= */
+@media (max-width: 992px) {
+  .creator-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .creator-heading {
+    font-size: 2.1rem;
+  }
+
+  .creator-subtext {
+    font-size: 1.05rem;
+  }
+}
+
+/* ================= Mobile – 1 card per row ================= */
+@media (max-width: 768px) {
+  .creator-grid {
     grid-template-columns: 1fr;
     gap: 25px;
   }
 
-  .abouthero-card {
+  .creator-card {
     text-align: center;
-    padding: 25px;
+    padding: 28px;
   }
 
-  .abouthero-heading {
-    font-size: 1.8rem;
+  .creator-heading {
+    font-size: 1.7rem;
   }
 
-  .abouthero-card h3 {
-    font-size: 1.3rem;
+  .creator-card h3 {
+    font-size: 1.25rem;
   }
 
-  .abouthero-card p {
+  .creator-card p {
     font-size: 0.95rem;
   }
 }

@@ -11,11 +11,10 @@ const About = () => {
       <div style={{textAlign:'center', fontSize:'20px', padding:'2em'}}>
             <h3>ABOUT <u>Us</u></h3>
             <p style={{fontFamily:"serif"}}>
-                At Docu Ease, we simplify the process of obtaining essential documents like residence, income, and caste certificates.
-                Our goal is to make government and personal documentation fast, transparent, and stress-free for everyone — anytime, anywhere.
+                “Our platform empowers creators to turn their skills, talent, and ideas into real opportunities. Whether you're a designer, developer, consultant, marketer, or content creator, we provide a streamlined ecosystem to showcase your work, connect with clients, and grow your personal brand. With powerful tools, seamless collaboration options, and business-ready features, creators can focus on what they do best while we handle the rest.”
             </p>
             <p style={{fontFamily:"serif"}}>
-                DOCs Service was founded with a mission to bridge the gap between citizens and essential government services.
+                “Your skills deserve a bigger stage. Our platform helps creators present their work, reach more clients, and build a strong professional identity.”
             </p>
         </div>
 

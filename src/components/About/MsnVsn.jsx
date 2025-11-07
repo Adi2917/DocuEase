@@ -1,27 +1,35 @@
-import React from 'react';
-import './MsnVsn.css';
-import msnvsnimg from '../../../src/assets/Aboutimg.png';
+import React from "react";
+import "./MsnVsn.css";
+import msnvsnimg from "../../../src/assets/Aboutimg.png";
 
 const MsnVsn = () => {
   return (
-    <div className='msnvsn'>
-      <div className='msnvsnpara'>
-        <h3>Mission 🧭</h3>
+    <section className="msnvsn">
+      <div className="msnvsnpara">
+        <h3>Our Mission 🧭</h3>
         <p>
-          Our mission is to simplify the entire documentation process for every individual — from students to professionals — by providing quick, transparent, and reliable support. We aim to eliminate confusion, reduce waiting time, and make every official task accessible and stress-free for everyone, no matter where they are.
+          At Creators, our mission is to build a multi-service ecosystem that
+          empowers individuals and businesses through digital innovation.  
+          Whether it's ads, designing, software, documentation, consultancy, or
+          loan assistance — we aim to deliver transparent, professional, and
+          result-driven solutions under one unified platform.
         </p>
 
-        <h3>Vision 🌍</h3>
+        <h3>Our Vision 🌍</h3>
         <p>
-          Our vision is to become India’s most trusted digital documentation platform — connecting millions of users with verified services, ensuring ease, accuracy, and comfort in every process. We envision a future where completing official paperwork is as simple as sending a message.
+          Our vision is to become one of India’s most trusted and impactful
+          multi-sector service providers — where every user gets easy access to
+          creative, technical, and financial solutions with complete reliability.  
+          We dream of a future where quality services are accessible to every
+          city, every business, and every individual without complexity or delay.
         </p>
       </div>
 
-      <div className='msnvsn-img-container'>
-        <img src={msnvsnimg} className='img' alt="Mission & Vision"/>
+      <div className="msnvsn-img-container">
+        <img src={msnvsnimg} className="img" alt="Mission & Vision" />
       </div>
-    </div>
-  )
-}
+    </section>
+  );
+};
 
 export default MsnVsn;
