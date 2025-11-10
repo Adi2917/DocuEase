@@ -1,8 +1,6 @@
 import React from "react";
 import "./LoanIntro.css";
-import loanImg from "../../assets/loan.jpg
-
-"; // apni image lagao
+import loanImg from "../../assets/loan.jpg"; // apni image lagao
 
 const LoanIntro = () => {
   return (
