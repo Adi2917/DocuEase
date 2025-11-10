@@ -1,0 +1,78 @@
+/* GraphicsIntro.css */
+.graphics-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0f7ff; /* light skyblue */
+  padding: 40px 20px;
+  gap: 20px;
+  flex-wrap: wrap; /* responsive ke liye */
+}
+
+.graphics-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.graphics-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0a3d62;
+}
+
+.graphics-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #1e272e;
+}
+
+.graphics-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.graphics-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.graphics-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ----------- Media Queries for Responsiveness ----------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .graphics-intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+  .graphics-text h1 {
+    font-size: 2rem;
+  }
+  .graphics-text p {
+    font-size: 1rem;
+  }
+  .graphics-image {
+    margin-top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .graphics-text h1 {
+    font-size: 1.5rem;
+  }
+  .graphics-text p {
+    font-size: 0.95rem;
+  }
+  .graphics-intro {
+    padding: 20px 10px;
+  }
+}

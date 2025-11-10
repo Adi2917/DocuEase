@@ -42,7 +42,10 @@ const ContactIntro = () => {
 
       if (response.ok) {
         alert("Form submitted successfully! ✅");
+        // Form reset
         setFormData({ name: "", number: "", email: "", service: "", comment: "" });
+        // Page reload after OK
+        window.location.reload();
       } else {
         alert("Oops! Something went wrong.");
       }

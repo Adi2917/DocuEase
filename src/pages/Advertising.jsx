@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../components/navbar/Navbar';
+import AdverHero from '../components/Advertisement/AdverHero';
+import Footer from '../components/Footer/Footer';
+import AdverIntro from '../components/Advertisement/AdverIntro';
 
 const Advertising = () => {
   return (
     <div>
       <Navbar />
-      <div style={{ padding: '2rem', textAlign: 'center' }}>
-        <h1>Advertising Services</h1>
-        <p>
-          Explore our creative advertising solutions to promote your brand effectively.
-        </p>
-      </div>
+      <AdverHero />
+      <AdverIntro/>
+      <Footer />
     </div>
   );
 };

@@ -1,0 +1,101 @@
+.adver-intro {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.adver-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.adver-description {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 850px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* Top Section: Image + first 2 cards */
+.top-section {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.adver-image {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.first-two-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+/* Bottom section: 3 cards in a row */
+.bottom-three-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+/* Key Term Cards */
+.keyterm-card {
+  background-color: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  flex: 1 1 200px;
+}
+
+.term-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ff6f61;
+  margin-bottom: 8px;
+}
+
+.term-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-two-cards {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bottom-three-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .keyterm-card {
+    width: 90%;
+    text-align: center;
+  }
+}
