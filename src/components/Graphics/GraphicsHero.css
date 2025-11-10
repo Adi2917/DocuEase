@@ -1,0 +1,111 @@
+.ghn-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 90px 50px;
+  background: linear-gradient(135deg, #1a0020, #3f0072, #6b00c8);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  gap: 50px;
+}
+
+/* LEFT SIDE */
+.ghn-left {
+  width: 50%;
+}
+
+.ghn-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.ghn-title span {
+  color: #ffce4e;
+  display: block;
+}
+
+.ghn-desc {
+  margin: 25px 0 30px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 600px;
+  opacity: 0.95;
+}
+
+.ghn-features {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ghn-feature h3 {
+  font-size: 1.15rem;
+  color: #ffde59;
+}
+
+.ghn-feature p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+
+/* RIGHT SIDE CARDS */
+.ghn-right {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ghn-card {
+  width: 180px;
+  height: 180px;
+  background: rgba(255,255,255,0.05);
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.ghn-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+/* FLOATING SHAPES */
+.ghn-floating-shapes .shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 1;
+}
+
+.s1 { width: 180px; height: 180px; background: #ffce4e50; top: -20px; left: -20px; }
+.s2 { width: 220px; height: 220px; background: #ff009960; bottom: -40px; right: 10px; }
+.s3 { width: 150px; height: 150px; background: #00ffe060; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .ghn-container {
+    flex-direction: column-reverse;
+    padding: 70px 20px;
+    text-align: center;
+  }
+  .ghn-left, .ghn-right { width: 100%; }
+  .ghn-card { width: 150px; height: 150px; margin: 10px auto; }
+}
+
+@media (max-width: 600px) {
+  .ghn-title { font-size: 2.2rem; }
+  .ghn-desc { font-size: 1rem; }
+  .ghn-card { width: 120px; height: 120px; font-size: 0.9rem; }
+}
